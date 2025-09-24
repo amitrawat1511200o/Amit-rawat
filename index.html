@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Crop Advisory System</title>
+  <link rel="stylesheet" href="amit.css" />
+</head>
+<body>
+  <header>
+    <h1>Smart Crop Advisory System</h1>
+    <nav>
+      <ul>
+        <li><a href="#advisory">Crop Advisory</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#query">Ask Expert</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Empowering Small & Marginal Farmers</h2>
+    <p>Get tailored crop advice, weather alerts, and more.</p>
+  </section>
+
+  <section id="advisory">
+    <h3>Crop Advisory Tool</h3>
+    <form id="advisoryForm">
+      <label for="soil">Soil Type:</label>
+      <select id="soil" required>
+        <option value="">Select</option>
+        <option value="clay">Clay</option>
+        <option value="loamy">Loamy</option>
+        <option value="sandy">Sandy</option>
+      </select>
+
+      <label for="region">Region:</label>
+      <input type="text" id="region" placeholder="e.g. Maharashtra" required />
+
+      <label for="season">Season:</label>
+      <select id="season" required>
+        <option value="">Select</option>
+        <option value="kharif">Kharif</option>
+        <option value="rabi">Rabi</option>
+        <option value="zaid">Zaid</option>
+      </select>
+
+      <button type="submit">Get Advice</button>
+    </form>
+
+    <div id="adviceResult"></div>
+  </section>
+
+  <section id="weather">
+    <h3>Live Weather</h3>
+    <button onclick="getWeather()">Check Weather</button>
+    <div id="weatherResult">Weather info will appear here.</div>
+  </section>
+
+  <section id="query">
+    <h3>Ask an Expert</h3>
+    <form id="queryForm">
+      <textarea id="question" placeholder="Type your question here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="queryResponse"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Crop Advisory. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
