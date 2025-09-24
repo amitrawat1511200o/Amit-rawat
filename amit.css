@@ -33,7 +33,7 @@ header nav ul li a {
 
 #hero {
   background: url('https://images.unsplash.com/photo-1600607681854-1f92f5d8c3c3') no-repeat center center/cover;
-  color:lightblue;
+  color:brown;
   padding: 60px 20px;
   text-align: center;
 }
@@ -78,5 +78,6 @@ footer {
   color: rgb(8, 19, 175);
   margin-top: 20px;
 }
+
 
 
